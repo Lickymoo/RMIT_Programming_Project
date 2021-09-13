@@ -24,6 +24,7 @@ public class Main {
         promptDialogue("This is a dialogue");
         enterToContinue();
         clearScreen();
+
         println("ttt");
     }
 }
