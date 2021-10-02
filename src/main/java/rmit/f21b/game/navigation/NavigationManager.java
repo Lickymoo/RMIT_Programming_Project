@@ -2,7 +2,7 @@ package rmit.f21b.game.navigation;
 
 import rmit.f21b.game.Player;
 
-public class NavigationMan {
+public class NavigationManager {
     // actual map size
     static final int maxX = 5;
     static final int maxY = 5;
@@ -10,7 +10,7 @@ public class NavigationMan {
 
     private MapSection[][] map = new MapSection[maxX][maxY];
 
-    public NavigationMan() {
+    public NavigationManager() {
         MapSection shipWreck = new MapSection("ShipWreck","Starting zone");
         MapSection theShore = new MapSection("The Shore","Shoreline");
         MapSection alvineForest = new MapSection("The Alvine Forest","forest");

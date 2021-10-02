@@ -5,8 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a06b8ee-f6e1-4358-9a90-6d9292b0d029" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/SceneManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IdleScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IntroScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationMan.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="ml.local.models.training.notification.expired" value="true" />
@@ -52,7 +61,7 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="rmit.f21b.game.Main" />
       <module name="RMIT_Programming_Project" />
@@ -66,9 +75,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovementScene" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="rmit.f21b.game.core.impl.MovementScene" />
+      <module name="RMIT_Programming_Project" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="rmit.f21b.game.core.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.MovementScene" />
       </list>
     </recent_temporary>
   </component>

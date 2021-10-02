@@ -16,6 +16,12 @@ public class Util {
         return;
     }
 
+    public static String promptText(String text){
+        println(text);
+        Scanner sc = new Scanner(System.in);
+        return sc.nextLine();
+    }
+
     public static void clearScreen() throws IOException {
         System.out.println(System.lineSeparator().repeat(50));
     }

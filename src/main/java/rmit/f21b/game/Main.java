@@ -1,30 +1,18 @@
 package rmit.f21b.game;
 
-import java.io.IOException;
-import java.util.Scanner;
+import rmit.f21b.game.core.SceneManager;
+import rmit.f21b.game.navigation.NavigationManager;
 
-import static rmit.f21b.game.Util.*;
+import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
-        clearScreen();
-        println(
-        "██████╗ ██████╗  ██████╗",
-        "██╔══██╗██╔══██╗██╔════╝",
-        "██████╔╝██████╔╝██║  ███╗",
-        "██╔══██╗██╔═══╝ ██║   ██║",
-        "██║  ██║██║     ╚██████╔╝",
-        "╚═╝  ╚═╝╚═╝      ╚═════╝ ");
-        println("");
-        println("Press ENTER to start your adventure");
-        println("");
-        enterToContinue();
-        clearScreen();
+    public static SceneManager sceneManager = new SceneManager();
+    public static NavigationManager navigationManager = new NavigationManager();
 
-        promptDialogue("This is a dialogue");
-        enterToContinue();
-        clearScreen();
+    public static final Player player = new Player();
 
-        println("test ");
+    public static void main(String[] args) throws IOException{
+        sceneManager.init(player);
+
     }
 }
