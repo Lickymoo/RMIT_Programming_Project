@@ -25,6 +25,6 @@ public class Main {
         enterToContinue();
         clearScreen();
 
-        println("ttt");
+        println("test ");
     }
 }
