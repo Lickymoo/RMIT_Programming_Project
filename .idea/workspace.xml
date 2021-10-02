@@ -6,7 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="3a06b8ee-f6e1-4358-9a90-6d9292b0d029" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationMan.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationMan.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -23,6 +22,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="JsBowerSettings">
     <bower-package value="" />
@@ -76,6 +83,7 @@
       <workItem from="1633152871434" duration="820000" />
       <workItem from="1633153712192" duration="863000" />
       <workItem from="1633154598229" duration="4007000" />
+      <workItem from="1633159539824" duration="1763000" />
     </task>
     <servers />
   </component>
