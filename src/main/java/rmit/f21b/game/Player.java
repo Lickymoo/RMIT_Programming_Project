@@ -4,9 +4,13 @@ import rmit.f21b.game.item.util.ArmourBase;
 import rmit.f21b.game.item.util.ItemBase;
 import rmit.f21b.game.item.util.WeaponBase;
 
+
 public class Player {
     public static int baseHealth = 10;
     public static int baseDamage = 1;
+    private int playerLocationX = 0;
+    private int playerLocationY = 0;
+
 
     private int health;
 
@@ -18,6 +22,8 @@ public class Player {
     public int calcMaxHealth(){
         int armourHealth = equippedArmour == null ? 0 : equippedArmour.health;
         return baseHealth + armourHealth;
+
+
     }
 
     //Getter Setters
@@ -28,4 +34,10 @@ public class Player {
     public int getHealth(){
         return this.health;
     }
+
+    public int getPlayerLocationX() {return this.playerLocationX;}
+    public int getPlayerLocationY() {return this.playerLocationY;}
+
+    public void setPlayerLocationX(int value) {this.playerLocationX = value;}
+    public void setPlayerLocationY(int value) {this.playerLocationY = value;}
 }
