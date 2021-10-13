@@ -20,6 +20,7 @@ public class IntroScene extends Scene {
                 "██║  ██║██║     ╚██████╔╝",
                 "╚═╝  ╚═╝╚═╝      ╚═════╝ ");
         println("");
+
         println("Press ENTER to start your adventure");
         println("");
         enterToContinue();
@@ -28,6 +29,6 @@ public class IntroScene extends Scene {
         promptDialogue("This is a dialogue");
         enterToContinue();
         clearScreen();
-        Main.sceneManager.setCurrentScene(new IdleScene());
+        Main.sceneManager.setCurrentScene(new MovementScene(), player);
     }
 }

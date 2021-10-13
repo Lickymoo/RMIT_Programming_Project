@@ -25,7 +25,7 @@ public class NavigationManager {
         map[0][0] = shipWreck;
         map[0][1] = theShore;
         map[1][0] = alvineForest;
-        map[0][0] = hauntedPyramid;
+        map[1][1] = hauntedPyramid;
         map[2][0] = villageCaldwelle;
         map[2][1] = caldwelleSwamp;
         map[2][2] = desertPlains;
@@ -36,6 +36,9 @@ public class NavigationManager {
     }
 
 
+    public void move(Player player){
+        int x
+    }
 
     public void moveNorth(Player player){
         int y = player.getPlayerLocationY();

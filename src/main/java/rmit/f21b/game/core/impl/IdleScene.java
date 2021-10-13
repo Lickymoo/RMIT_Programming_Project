@@ -12,6 +12,6 @@ public class IdleScene extends Scene {
     @Override
     public void run(Player player) throws IOException {
         String input = promptText("Enter key");
-        Main.sceneManager.setCurrentScene(new MovementScene());
+
     }
 }
