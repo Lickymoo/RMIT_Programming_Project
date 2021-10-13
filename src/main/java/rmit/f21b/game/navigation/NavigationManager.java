@@ -43,7 +43,12 @@ public class NavigationManager {
     }
 
 
-    public boolean canMove(int x, int y){
+    public boolean canMove(Player player, Cardinal direction){
+        int x = player.getPlayerLocationX();
+        int y = player.getPlayerLocationY();
+        x += direction.x;
+        y += direction.y;
+
         if(x < 0 || y < 0 || x >= maxX || y >= maxY)
             return false;
 
