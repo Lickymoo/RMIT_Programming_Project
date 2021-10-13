@@ -3,6 +3,9 @@ package rmit.f21b.game.core.impl;
 import rmit.f21b.game.Main;
 import rmit.f21b.game.Player;
 import rmit.f21b.game.core.Scene;
+import rmit.f21b.game.item.impl.HealthPotionItem;
+import rmit.f21b.game.item.impl.PointySwordItem;
+import rmit.f21b.game.item.impl.SnakesFangItem;
 
 import java.io.IOException;
 
@@ -26,10 +29,17 @@ public class IntroScene extends Scene {
         enterToContinue();
         clearScreen();
 
-        promptDialogue("You have been caught in a storm and have been shipwrecked, yo wake up on the shoreline /n" +
-                "you see swirling  clouds in the distance and all you know is that you must go inland ");
+        typeWriter("You have been caught in a storm and have been shipwrecked, yo wake up on the shoreline you see swirling  clouds in the distance and all you know is that you must go inland ", 25);
+        println("Press ENTER twice to start your adventure");
         enterToContinue();
         clearScreen();
-        Main.sceneManager.setCurrentScene(new MovementScene(), player);
+
+        //Temp
+        player.addInventoryItem(new HealthPotionItem());
+        player.addInventoryItem(new PointySwordItem());
+        player.addInventoryItem(new SnakesFangItem());
+        //
+
+        Main.sceneManager.setCurrentScene(new IdleScene(), player);
     }
 }

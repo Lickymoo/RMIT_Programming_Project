@@ -8,5 +8,9 @@ public abstract class ItemBase {
         this.name = name;
         this.description = description;
     }
+
+    public String[] displayStats(){
+        return new String[]{};
+    }
 }
 

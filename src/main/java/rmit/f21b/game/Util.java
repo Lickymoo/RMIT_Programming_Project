@@ -10,6 +10,25 @@ public class Util {
         }
     }
 
+    public static void printif(boolean b, String... input){
+        if(!b) return;
+        for (String s : input){
+            System.out.println(s);
+        }
+    }
+
+    public static void typeWriter(String text, long timeMillis){
+        try {
+            String[] chars = text.split("");
+            for (String c : chars) {
+                System.out.print(c);
+                Thread.sleep(timeMillis);
+            }
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+    }
+
     public static void enterToContinue() throws IOException {
         Scanner sc = new Scanner(System.in);
         sc.nextLine();
@@ -18,6 +37,11 @@ public class Util {
 
     public static String promptText(String text){
         println(text);
+        Scanner sc = new Scanner(System.in);
+        return sc.nextLine();
+    }
+
+    public static String getInput(){
         Scanner sc = new Scanner(System.in);
         return sc.nextLine();
     }
@@ -54,5 +78,14 @@ public class Util {
             return sb.toString();
         }
         return input;
+    }
+
+    public static boolean canParseInt(String str){
+        try{
+            Integer.parseInt(str);
+            return true;
+        }catch(NumberFormatException ex){
+            return false;
+        }
     }
 }
