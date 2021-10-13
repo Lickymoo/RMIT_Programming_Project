@@ -26,7 +26,8 @@ public class IntroScene extends Scene {
         enterToContinue();
         clearScreen();
 
-        promptDialogue("This is a dialogue");
+        promptDialogue("You have been caught in a storm and have been shipwrecked, yo wake up on the shoreline /n" +
+                "you see swirling  clouds in the distance and all you know is that you must go inland ");
         enterToContinue();
         clearScreen();
         Main.sceneManager.setCurrentScene(new MovementScene(), player);

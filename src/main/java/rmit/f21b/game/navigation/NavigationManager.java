@@ -58,6 +58,18 @@ public class NavigationManager {
         return true;
     }
 
+
+
+    public MapSection getNeighbourSection(Player player, Cardinal direction) {
+        int x = player.getPlayerLocationX();
+        int y = player.getPlayerLocationY();
+        x += direction.x;
+        y += direction.y;
+        return map [x] [y];
+    }
+
+
+
     public MapSection[][] getMap(){
         return this.map;
     }
