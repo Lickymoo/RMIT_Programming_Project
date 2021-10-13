@@ -21,7 +21,7 @@ public class IntroScene extends Scene {
                 "╚═╝  ╚═╝╚═╝      ╚═════╝ ");
         println("");
 
-        println("Press ENTER to start your adventure");
+        println("Press ENTER twice to start your adventure");
         println("");
         enterToContinue();
         clearScreen();

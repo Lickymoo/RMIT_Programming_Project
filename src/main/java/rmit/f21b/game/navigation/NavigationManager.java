@@ -22,16 +22,16 @@ public class NavigationManager {
         MapSection mountainCrux = new MapSection("Mountain Crux","Mountain crux");
 
         map[0][0] = shipWreck;
-        map[0][1] = theShore;
-        map[1][0] = alvineForest;
+        map[1][0] = theShore;
+        map[0][1] = alvineForest;
         map[1][1] = hauntedPyramid;
-        map[2][0] = villageCaldwelle;
-        map[2][1] = caldwelleSwamp;
+        map[0][2] = villageCaldwelle;
+        map[1][2] = caldwelleSwamp;
         map[2][2] = desertPlains;
-        map[3][2] = melancholyCave;
-        map[4][2] = melancholyCave;
+        map[2][3] = melancholyCave;
+        map[2][4] = melancholyCave;
         map[3][3] = mountainCliffsAscent;
-        map[3][4] = mountainCrux;
+        map[4][3] = mountainCrux;
     }
 
 

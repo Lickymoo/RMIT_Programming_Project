@@ -14,17 +14,25 @@ public class MovementScene extends Scene {
     @Override
     public void run(Player player) throws IOException {
         println(player.getMapSection().name);
-        String input = promptText("What direction would you like to go (N) (S) (E) (W)");
+        String input = promptText("What direction would you like to go ");
+        println("Enter N for North");
+        println("Enter S for South");
+        println("Enter E for East");
+        println("Enter W for West");
+
+
+
+
 
 
         switch (input.toUpperCase()) {
             case "N":
                 println("You start moving North ");
-                Main.navigationManager.move(player, 0,1);
+                Main.navigationManager.move(player, 0,-1);
                 break;
             case "S":
                 println("You start moving South ");
-                Main.navigationManager.move(player, 0, -1);
+                Main.navigationManager.move(player, 0, 1);
                 break;
             case "E":
                 println("You start moving East ");
