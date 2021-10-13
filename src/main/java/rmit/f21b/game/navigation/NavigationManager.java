@@ -36,29 +36,13 @@ public class NavigationManager {
     }
 
 
-    public void move(Player player){
-        int x
+    public void move(Player player, int x, int y){
+        int currentY = player.getPlayerLocationY();
+        int currentX = player.getPlayerLocationX();
+        player.setPlayerLocationY(currentY + y);
+        player.setPlayerLocationX(currentX + x);
     }
 
-    public void moveNorth(Player player){
-        int y = player.getPlayerLocationY();
-        player.setPlayerLocationY(y+1);
-    }
-
-    public void moveSouth(Player player){
-        int y = player.getPlayerLocationY();
-        player.setPlayerLocationY(y-1);
-    }
-
-    public void moveEast(Player player){
-        int x = player.getPlayerLocationX();
-        player.setPlayerLocationX(x+1);
-    }
-
-    public void moveWest(Player player){
-        int x = player.getPlayerLocationX();
-        player.setPlayerLocationY(x-1);
-    }
 
     public boolean canMove(int x, int y){
         if(x < 0 || y < 0 || x >= maxX || y >= maxY)

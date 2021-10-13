@@ -17,25 +17,30 @@ public class MovementScene extends Scene {
       String input = promptText("What direction would you like to go (N) (S) (E) (W)");
       println(input);
 
-        switch (input) {
+        println(player.getPlayerLocationX()+ " ");
+
+
+        switch (input.toUpperCase()) {
             case "N":
                 println("You start moving North ");
-                Main.navigationManager.moveNorth(player);
+                Main.navigationManager.move(player, 0,1);
                 break;
             case "S":
                 println("You start moving South ");
-                Main.navigationManager.moveSouth(player);
+                Main.navigationManager.move(player, 0, -1);
                 break;
             case "E":
                 println("You start moving East ");
-                Main.navigationManager.moveEast(player);
+                Main.navigationManager.move(player, 1, 0);
                 break;
             case "W":
                 println("You start moving West ");
-                Main.navigationManager.moveWest(player);
+                Main.navigationManager.move(player, -1, 0);
                 break;
 
         }
+
+        println(player.getPlayerLocationX()+ " ");
 
 
 
