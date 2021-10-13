@@ -6,6 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3a06b8ee-f6e1-4358-9a90-6d9292b0d029" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" afterDir="false" />
     </list>
@@ -52,7 +53,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">

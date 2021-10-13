@@ -7,8 +7,7 @@ public class NavigationManager {
     static final int maxX = 5;
     static final int maxY = 5;
 
-
-    private MapSection[][] map = new MapSection[maxX][maxY];
+    private final MapSection[][] map = new MapSection[maxX][maxY];
 
     public NavigationManager() {
         MapSection shipWreck = new MapSection("ShipWreck","Starting zone");
@@ -52,6 +51,10 @@ public class NavigationManager {
             return false;
 
         return true;
+    }
+
+    public MapSection[][] getMap(){
+        return this.map;
     }
 
 

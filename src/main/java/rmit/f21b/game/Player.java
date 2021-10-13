@@ -3,6 +3,8 @@ package rmit.f21b.game;
 import rmit.f21b.game.item.util.ArmourBase;
 import rmit.f21b.game.item.util.ItemBase;
 import rmit.f21b.game.item.util.WeaponBase;
+import rmit.f21b.game.navigation.MapSection;
+import rmit.f21b.game.navigation.NavigationManager;
 
 
 public class Player {
@@ -22,8 +24,11 @@ public class Player {
     public int calcMaxHealth(){
         int armourHealth = equippedArmour == null ? 0 : equippedArmour.health;
         return baseHealth + armourHealth;
+    }
 
-
+    public MapSection getMapSection(){
+        NavigationManager navMan = Main.navigationManager;
+        return navMan.getMap()[playerLocationX][playerLocationY];
     }
 
     //Getter Setters
