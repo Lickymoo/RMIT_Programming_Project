@@ -15,13 +15,6 @@ public class IntroScene extends Scene {
     @Override
     public void run(Player player) throws IOException {
         clearScreen();
-        println(
-                "██████╗ ██████╗  ██████╗",
-                "██╔══██╗██╔══██╗██╔════╝",
-                "██████╔╝██████╔╝██║  ███╗",
-                "██╔══██╗██╔═══╝ ██║   ██║",
-                "██║  ██║██║     ╚██████╔╝",
-                "╚═╝  ╚═╝╚═╝      ╚═════╝ ");
         println("");
 
         println("Press ENTER twice to start your adventure");
@@ -29,8 +22,7 @@ public class IntroScene extends Scene {
         enterToContinue();
         clearScreen();
 
-        promptDialogue("You've been caught in a storm and shipwrecked. \n You wake up on the shoreline to see swirling clouds in the distance and all you know is that you must go inland.");
-        println("Press ENTER to continue");
+        displayDialogue("You've been caught in a storm and shipwrecked. \n You wake up on the shoreline to see swirling clouds in the distance and all you know is that you must go inland.");
         enterToContinue();
         clearScreen();
 
