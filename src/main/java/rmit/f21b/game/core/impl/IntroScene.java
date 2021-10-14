@@ -29,8 +29,8 @@ public class IntroScene extends Scene {
         enterToContinue();
         clearScreen();
 
-        typeWriter("You have been caught in a storm and have been shipwrecked, yo wake up on the shoreline you see swirling  clouds in the distance and all you know is that you must go inland ", 25);
-        println("Press ENTER twice to start your adventure");
+        promptDialogue("You've been caught in a storm and shipwrecked. \n You wake up on the shoreline to see swirling clouds in the distance and all you know is that you must go inland.");
+        println("Press ENTER to continue");
         enterToContinue();
         clearScreen();
 
