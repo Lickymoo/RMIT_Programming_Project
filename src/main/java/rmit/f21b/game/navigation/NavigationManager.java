@@ -10,8 +10,9 @@ public class NavigationManager {
     private final MapSection[][] map = new MapSection[maxX][maxY];
 
     public NavigationManager() {
+        //Initialize map areas
         MapSection shipWreck = new MapSection("The Shipwreck","A grim coastline lined with broken ship parts and dangerous animals.");
-        MapSection theShore = new MapSection("The Shore","The beach's shore, crusty and dark.");
+        MapSection theShore = new MapSection("The Shore","The beach's shore, crusty and dark.", (p, a) -> {if(!a.visited) System.out.println("first");});
         MapSection alvineForest = new MapSection("The Alvine Forest","A thick plumage of leaves and towering oak trees surround you.");
         MapSection hauntedPyramid = new MapSection("The Haunted Pyramid","An ancient ruin, still inhabited by those once living.");
         MapSection villageCaldwelle = new MapSection("The Village of Caldwelle","A poor village in the middle of desolation, teaming with civilization.");
@@ -56,8 +57,6 @@ public class NavigationManager {
         return true;
     }
 
-
-
     public MapSection getNeighbourSection(Player player, Cardinal direction) {
         int x = player.getPlayerLocationX();
         int y = player.getPlayerLocationY();
@@ -65,8 +64,6 @@ public class NavigationManager {
         y += direction.y;
         return map [x] [y];
     }
-
-
 
     public MapSection[][] getMap(){
         return this.map;
