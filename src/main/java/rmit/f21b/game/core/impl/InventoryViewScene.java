@@ -31,7 +31,7 @@ public class InventoryViewScene extends Scene {
             println(i + " - " + inventory.get(i).name);
         }
 
-        String input = promptText("Enter item number to interact or type \"exit\" to return");
+        String input = promptText("Enter item number to interact or type \"EXIT\" to return");
         if(input.equalsIgnoreCase("exit")){
             Main.sceneManager.setCurrentScene(new IdleScene(), player);
         }
@@ -63,7 +63,7 @@ public class InventoryViewScene extends Scene {
         println("Enter the following keys:");
         printif(!(base instanceof QuestItem), "D - Drop");
         printif((base instanceof EquippableItem), "E - Equip");
-        println("exit - Exit back to inventory view");
+        println("EXIT - Exit back to inventory view");
         println();
 
         String interactInput = getInput();

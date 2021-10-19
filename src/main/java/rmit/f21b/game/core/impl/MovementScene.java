@@ -18,7 +18,7 @@ public class MovementScene extends Scene {
     public void run(Player player) throws IOException {
         clearScreen();
         NavigationManager navMan = Main.navigationManager;
-
+        MapViewScene.renderMap(player);
 
 
         if (navMan.canMove(player, Cardinal.NORTH))
@@ -30,7 +30,7 @@ public class MovementScene extends Scene {
         if (navMan.canMove(player, Cardinal.WEST))
             println("W - Move West");
 
-        println("exit - to return");
+        println("EXIT - To return");
         String input = promptText("What direction would you like to go ");
 
         switch (input.toUpperCase()) {

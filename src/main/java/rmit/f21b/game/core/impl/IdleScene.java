@@ -15,9 +15,9 @@ public class IdleScene extends Scene {
         println("Current Location: " + player.getMapSection().name);
         println(" ");
         println("Enter a key to continue: ");
-        println("I - open inventory");
-        println("M - move to another location");
-        println("O - view map");
+        println("I - Open inventory");
+        println("M - Move to another location");
+        println("O - View map");
         String input = getInput();
         switch (input.toUpperCase()){
             case "I":

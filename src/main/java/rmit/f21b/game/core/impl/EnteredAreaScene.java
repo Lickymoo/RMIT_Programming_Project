@@ -15,8 +15,7 @@ public class EnteredAreaScene extends Scene {
         displayDialogue("You have entered " + player.getMapSection().name + "\n\n" + player.getMapSection().description);
         enterToContinue();
 
-        if(player.getMapSection().enterEvent != null)
-            player.getMapSection().enterEvent.accept(player);
+        player.getMapSection().onEnter(player);
 
         Main.sceneManager.setCurrentScene(new IdleScene(), player);
     }
