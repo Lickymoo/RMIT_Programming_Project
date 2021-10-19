@@ -76,7 +76,10 @@ public class InventoryViewScene extends Scene {
                     Main.sceneManager.setCurrentScene(new InventoryViewScene(), player);
                 }
                 player.removeInventoryItem(base);
+                clearScreen();
                 println("Item dropped");
+                println("ENTER to continue");
+                enterToContinue();
                 break;
             case "E":
                 if(!(base instanceof EquippableItem)){
@@ -88,7 +91,10 @@ public class InventoryViewScene extends Scene {
                 }
                 player.removeInventoryItem(base);
                 player.equipItem((EquippableItem) base);
+                clearScreen();
                 println("Item equipped!");
+                println("ENTER to continue");
+                enterToContinue();
                 
                 break;
             case "EXIT":

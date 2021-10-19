@@ -17,28 +17,6 @@ public class MapViewScene extends Scene {
         clearScreen();
         renderMap(player);
         println("Legend: ", "# = Area", "- = Connection between area", "O = You are currently here", "");
-        /*
-       +-------------------+
-       | # - #             |
-       | |                 |
-       | #       #         |
-       | |       |         |
-       | # - # - # - # - # |
-       |             |     |
-       |             #     |
-       |             |     |
-       |             #     |
-       +-------------------+
-        */
-
-        /*
-        for(int y = 0; y < map[0].length; y++){
-            for(int x = 0; x < map.length; x++){
-                if(map[x][y] != null)
-                println(x + ", " + y + ": " + map[x][y].name);
-            }
-        }
-         */
 
         println("Press ENTER to continue");
         enterToContinue();
@@ -76,6 +54,15 @@ public class MapViewScene extends Scene {
             }
         }
         //display map
+        String[] compassViewMap = {
+                "     N",
+                "     ^",
+                " W < o > E",
+                "     ∨",
+                "     S"
+
+                };
+
         println("Map view");
         println("+-------------------+");
         for(int x = 0; x < displayMap.length; x++){
@@ -83,8 +70,35 @@ public class MapViewScene extends Scene {
             for(int y = 0; y < displayMap[x].length; y++){
                 print(displayMap[x][y]);
             }
-            println(" |");
+            print(" |");
+            if(x < compassViewMap.length){
+                print(compassViewMap[x]);
+            }
+            println("");
         }
         println("+-------------------+");
+
+        /*
+       +-------------------+     N
+       | # - #             |     ^
+       | |                 | W < o > E
+       | #       #         |     ∨
+       | |       |         |     S
+       | # - # - # - # - # |
+       |             |     |
+       |             #     |
+       |             |     |
+       |             #     |
+       +-------------------+
+        */
+
+        /*
+        for(int y = 0; y < map[0].length; y++){
+            for(int x = 0; x < map.length; x++){
+                if(map[x][y] != null)
+                println(x + ", " + y + ": " + map[x][y].name);
+            }
+        }
+         */
     }
 }
