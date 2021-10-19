@@ -8,12 +8,22 @@ import java.util.Scanner;
 public class Util {
 
     /**
-    * Shortcut to print to screen
+    * Shortcut to println to screen
     * @param input input to print to screen
      */
     public static void println(String... input){
         for (String s : input){
             System.out.println(s);
+        }
+    }
+
+    /**
+     * Shortcut to print to screen
+     * @param input input to print to screen
+     */
+    public static void print(String... input){
+        for (String s : input){
+            System.out.print(s);
         }
     }
 

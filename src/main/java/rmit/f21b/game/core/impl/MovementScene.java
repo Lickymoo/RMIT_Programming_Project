@@ -16,19 +16,21 @@ public class MovementScene extends Scene {
 
     @Override
     public void run(Player player) throws IOException {
+        clearScreen();
         NavigationManager navMan = Main.navigationManager;
 
 
 
         if (navMan.canMove(player, Cardinal.NORTH))
-            println("Enter N for North");
+            println("N - Move North");
         if (navMan.canMove(player, Cardinal.SOUTH))
-            println("Enter S for South");
+            println("S - Move South");
         if (navMan.canMove(player, Cardinal.EAST))
-            println("Enter E for East");
+            println("E - Move East");
         if (navMan.canMove(player, Cardinal.WEST))
-            println("Enter W for West");
+            println("W - Move West");
 
+        println("exit - to return");
         String input = promptText("What direction would you like to go ");
 
         switch (input.toUpperCase()) {
@@ -37,38 +39,38 @@ public class MovementScene extends Scene {
                     println("you can not go that way please choose another direction");
                     Main.sceneManager.setCurrentScene(new MovementScene(), player);
                 }
-                println("You start moving North towards " + navMan.getNeighbourSection(player, Cardinal.NORTH).name);
-                navMan.move(player, 0,-1);
+                navMan.move(player, Cardinal.NORTH);
                 break;
             case "S":
                 if (!navMan.canMove(player, Cardinal.SOUTH)){
                     println("you can not go that way please choose another direction");
                     Main.sceneManager.setCurrentScene(new MovementScene(), player);
                 }
-                println("You start moving South towards" + navMan.getNeighbourSection(player, Cardinal.SOUTH).name);
-                navMan.move(player, 0, 1);
+                navMan.move(player, Cardinal.SOUTH);
                 break;
             case "E":
                 if (!navMan.canMove(player, Cardinal.EAST)){
                     println("you can not go that way please choose another direction");
                     Main.sceneManager.setCurrentScene(new MovementScene(), player);
                 }
-                println("You start moving East towards" + navMan.getNeighbourSection(player, Cardinal.EAST).name);
-                navMan.move(player, 1, 0);
+                navMan.move(player, Cardinal.EAST);
                 break;
             case "W":
                 if (!navMan.canMove(player, Cardinal.WEST)){
                     println("you can not go that way please choose another direction");
                     Main.sceneManager.setCurrentScene(new MovementScene(), player);
                 }
-                println("You start moving West towards" + navMan.getNeighbourSection(player, Cardinal.WEST).name);
-                navMan.move(player, -1, 0);
+                navMan.move(player, Cardinal.WEST);
+                break;
+            case "EXIT":
+                Main.sceneManager.setCurrentScene(new IdleScene(), player);
                 break;
             default:
-                println("incorrect input");
+                println("Incorrect input \'" + input + "\'");
+                println("Press ENTER to continue");
                 Main.sceneManager.setCurrentScene(new MovementScene(), player);
                 break;
         }
-        Main.sceneManager.setCurrentScene(new IdleScene(), player);
+        Main.sceneManager.setCurrentScene(new EnteredAreaScene(), player);
     }
 }

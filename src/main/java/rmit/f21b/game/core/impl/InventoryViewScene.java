@@ -1,14 +1,12 @@
-package rmit.f21b.game.core.impl.inventory;
+package rmit.f21b.game.core.impl;
 
 import rmit.f21b.game.Main;
 import rmit.f21b.game.Player;
 import rmit.f21b.game.core.Scene;
-import rmit.f21b.game.core.impl.IdleScene;
 import rmit.f21b.game.item.util.*;
 
 import java.io.IOException;
 import java.util.List;
-import java.util.Locale;
 
 import static rmit.f21b.game.Util.*;
 
@@ -65,6 +63,7 @@ public class InventoryViewScene extends Scene {
         println("Enter the following keys:");
         printif(!(base instanceof QuestItem), "D - Drop");
         printif((base instanceof EquippableItem), "E - Equip");
+        println("exit - Exit back to inventory view");
         println();
 
         String interactInput = getInput();
@@ -92,13 +91,18 @@ public class InventoryViewScene extends Scene {
                 println("Item equipped!");
                 
                 break;
+            case "EXIT":
+                Main.sceneManager.setCurrentScene(new InventoryViewScene(), player);
+                break;
             default:
                 println("Incorrect input \'" + interactInput + "\'");
+                println("Press ENTER to continue");
+                enterToContinue();
                 Main.sceneManager.setCurrentScene(new InventoryViewScene(), player);
                 break;
         }
 
-        Main.sceneManager.setCurrentScene(new IdleScene(), player);
+        Main.sceneManager.setCurrentScene(new InventoryViewScene(), player);
     }
 
 }

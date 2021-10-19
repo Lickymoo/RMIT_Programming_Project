@@ -5,16 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a06b8ee-f6e1-4358-9a90-6d9292b0d029" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/inventory/InventoryViewScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/EquippableItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/EnteredAreaScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MapViewScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IdleScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IdleScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IntroScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IntroScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/ArmourBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/ArmourBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/ItemBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/ItemBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/WeaponBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/WeaponBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/inventory/InventoryViewScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/InventoryViewScene.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/Cardinal.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/Cardinal.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,8 +25,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -55,7 +56,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../School/1" />
     <property name="ml.local.models.training.notification.expired" value="true" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
@@ -64,9 +65,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="rmit.f21b.game.core.impl" />
       <recent name="rmit.f21b.game.item.util" />
       <recent name="rmit.f21b.game.core.impl.inventory" />
-      <recent name="rmit.f21b.game.core.impl" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Main">
@@ -88,7 +89,7 @@
       <module name="RMIT_Programming_Project" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="rmit.f21b.game.core.impl.inventory.*" />
+          <option name="PATTERN" value="rmit.f21b.game.core.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>

@@ -3,9 +3,7 @@ package rmit.f21b.game.core.impl;
 import rmit.f21b.game.Main;
 import rmit.f21b.game.Player;
 import rmit.f21b.game.core.Scene;
-import rmit.f21b.game.item.impl.HealthPotionItem;
-import rmit.f21b.game.item.impl.PointySwordItem;
-import rmit.f21b.game.item.impl.SnakesFangItem;
+import rmit.f21b.game.item.impl.*;
 
 import java.io.IOException;
 
@@ -17,6 +15,9 @@ public class IntroScene extends Scene {
         clearScreen();
         println("");
 
+        println("This game is best experienced with a fullscreen console.");
+        println("");
+        println("Created by: Austin Craig, Lyndon Tokai & Mitchell Gertrude");
         println("Press ENTER twice to start your adventure");
         println("");
         enterToContinue();
@@ -29,6 +30,8 @@ public class IntroScene extends Scene {
         //Temp
         player.addInventoryItem(new HealthPotionItem());
         player.addInventoryItem(new PointySwordItem());
+        player.addInventoryItem(new ShabbySwordItem());
+        player.addInventoryItem(new MonstrousCrabShellItem());
         player.addInventoryItem(new SnakesFangItem());
         //
 
