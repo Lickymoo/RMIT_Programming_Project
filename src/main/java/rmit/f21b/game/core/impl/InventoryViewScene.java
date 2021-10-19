@@ -15,6 +15,7 @@ public class InventoryViewScene extends Scene {
     @Override
     public void run(Player player) throws IOException {
         clearScreen();
+        player.tidyInventory();
         List<ItemBase> inventory = player.getInventory();
         println("Equipped Armour: " + (player.getEquippedArmour() != null ? player.getEquippedArmour().name : "None"));
         println("Equipped Weapon: " + (player.getEquippedWeapon() != null ? player.getEquippedWeapon().name : "None"));
@@ -36,6 +37,7 @@ public class InventoryViewScene extends Scene {
             Main.sceneManager.setCurrentScene(new IdleScene(), player);
         }
         if(!canParseInt(input)){
+            clearScreen();
             println("Incorrect input \'" + input + "\'");
             println("ENTER to continue");
             enterToContinue();
@@ -43,6 +45,7 @@ public class InventoryViewScene extends Scene {
         }
         int index = Integer.parseInt(input);
         if(index < 0 || index >= inventory.size()){
+            clearScreen();
             println("There is no item here");
             println("ENTER to continue");
             enterToContinue();
@@ -50,6 +53,7 @@ public class InventoryViewScene extends Scene {
         }
         ItemBase base = inventory.get(index);
         if(base == null){
+            clearScreen();
             println("There is no item here");
             println("ENTER to continue");
             enterToContinue();
@@ -70,6 +74,7 @@ public class InventoryViewScene extends Scene {
         switch (interactInput.toUpperCase()){
             case "D":
                 if(base instanceof QuestItem){
+                    clearScreen();
                     println("This is a quest item, it cannot be dropped.");
                     println("ENTER to continue");
                     enterToContinue();
@@ -83,6 +88,7 @@ public class InventoryViewScene extends Scene {
                 break;
             case "E":
                 if(!(base instanceof EquippableItem)){
+                    clearScreen();
                     println("This item is not able to be equipped");
                     println("ENTER to continue");
                     enterToContinue();

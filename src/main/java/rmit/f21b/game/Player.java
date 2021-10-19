@@ -23,7 +23,7 @@ public class Player {
 
     private int health;
 
-    private final List<ItemBase> inventory = new ArrayList<>();
+    private List<ItemBase> inventory = new ArrayList<>();
 
     private WeaponBase equippedWeapon;
     private ArmourBase equippedArmour;
@@ -95,6 +95,14 @@ public class Player {
         return true;
     }
 
+    public void tidyInventory(){
+        List<ItemBase> newInv = new ArrayList<>();
+        for(ItemBase item : this.inventory){
+            if(item != null)
+                newInv.add(item);
+        }
+        this.inventory = newInv;
+    }
 
     public boolean removeInventoryItem(ItemBase item){
         return inventory.remove(item);
