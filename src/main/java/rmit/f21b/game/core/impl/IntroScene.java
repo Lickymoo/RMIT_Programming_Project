@@ -27,13 +27,7 @@ public class IntroScene extends Scene {
         enterToContinue();
         clearScreen();
 
-        //Temp
-        player.addInventoryItem(new HealthPotionItem());
-        player.addInventoryItem(new PointySwordItem());
-        player.addInventoryItem(new ShabbySwordItem());
-        player.addInventoryItem(new MonstrousCrabShellItem());
-        player.addInventoryItem(new SnakesFangItem());
-        //
+
 
         Main.sceneManager.setCurrentScene(new IdleScene(), player);
     }

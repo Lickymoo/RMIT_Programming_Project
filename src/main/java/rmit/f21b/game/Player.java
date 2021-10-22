@@ -1,5 +1,6 @@
 package rmit.f21b.game;
 
+import rmit.f21b.game.item.impl.ShabbySwordItem;
 import rmit.f21b.game.item.util.ArmourBase;
 import rmit.f21b.game.item.util.EquippableItem;
 import rmit.f21b.game.item.util.ItemBase;
@@ -13,22 +14,26 @@ import java.util.List;
 
 
 public class Player {
-    public static int baseHealth = 10;
-    public static int baseDamage = 1;
+    public static float baseHealth = 10;
+    public static float baseDamage = 1;
     public static int maxInventorySize = 6;
 
     private int playerLocationX = 0;
     private int playerLocationY = 0;
 
 
-    private int health;
+    private float health;
 
     private List<ItemBase> inventory = new ArrayList<>();
 
-    private WeaponBase equippedWeapon;
+    private WeaponBase equippedWeapon = new ShabbySwordItem();
     private ArmourBase equippedArmour;
 
-    public int calcMaxHealth(){
+    public Player(){
+        health = calcMaxHealth();
+    }
+
+    public float calcMaxHealth(){
         int armourHealth = equippedArmour == null ? 0 : equippedArmour.health;
         return baseHealth + armourHealth;
     }
@@ -59,12 +64,20 @@ public class Player {
         return this.equippedArmour;
     }
 
-    public void setHealth(int value){
+    public void setHealth(float value){
         this.health = value;
     }
 
-    public int getHealth(){
+    public float getHealth(){
         return this.health;
+    }
+
+    public float getDamage(){
+        return equippedWeapon == null ? baseDamage : equippedWeapon.damage + baseDamage;
+    }
+
+    public float getAccuracy(){
+        return equippedWeapon == null ? .5f : equippedWeapon.accuracy;
     }
 
     public int getPlayerLocationX() {return this.playerLocationX;}
@@ -77,11 +90,13 @@ public class Player {
         return this.inventory;
     }
 
-    public boolean addInventoryItem(ItemBase base){
+    public boolean addInventoryItem(ItemBase... bases){
         int invSize = inventory.size();
         if(invSize >= maxInventorySize) return false;
 
-        inventory.add(base);
+        for(ItemBase item : bases){
+            inventory.add(item);
+        }
         return true;
     }
 
@@ -95,6 +110,15 @@ public class Player {
         return true;
     }
 
+    public boolean hasItem(Class<? extends ItemBase> clazz){
+        for(ItemBase item : this.inventory){
+            //checks whether items in inventory share same class as 'clazz'
+            if(item.getClass() == clazz)
+                return true;
+        }
+        return false;
+    }
+
     public void tidyInventory(){
         List<ItemBase> newInv = new ArrayList<>();
         for(ItemBase item : this.inventory){
@@ -106,5 +130,16 @@ public class Player {
 
     public boolean removeInventoryItem(ItemBase item){
         return inventory.remove(item);
+    }
+
+    public boolean removeInventoryItem(Class<? extends ItemBase> item){
+        List<ItemBase> removeList = new ArrayList<>();
+        for(ItemBase base : this.inventory){
+            if(base.getClass() == item)
+                removeList.add(base);
+        }
+
+        this.inventory.removeAll(removeList);
+        return true;
     }
 }

@@ -5,12 +5,12 @@ import rmit.f21b.game.item.util.PotionBase;
 
 public class HealthPotionItem extends PotionBase {
     public HealthPotionItem() {
-        super("Health Potion", "A red potion, restores 5 health on use.");
+        super("Health Potion", "A red potion, restores 5 health on use.", 5);
     }
 
     @Override
     public void use(Player player) {
-        int playerHealth = player.getHealth();
-        player.setHealth(playerHealth + 5);
+        float playerHealth = player.getHealth();
+        player.setHealth(playerHealth + this.healValue);
     }
 }

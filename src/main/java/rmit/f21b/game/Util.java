@@ -3,6 +3,7 @@ package rmit.f21b.game;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 import java.util.Scanner;
 
 public class Util {
@@ -178,5 +179,16 @@ public class Util {
         }catch(NumberFormatException ex){
             return false;
         }
+    }
+
+    /**
+     * Rolls a random number between minimum and maximum value
+     * @param min minimum value for random draw
+     * @param max maximum value for random draw
+     * @return random value between min and max
+     */
+    public static int random(int min, int max){
+        Random rand = new Random();
+        return rand.nextInt(max-min) + min;
     }
 }

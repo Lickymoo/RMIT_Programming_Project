@@ -23,10 +23,10 @@ public class MovementScene extends Scene {
 
         if (navMan.canMove(player, Cardinal.NORTH))
             println("N - Move North");
-        if (navMan.canMove(player, Cardinal.SOUTH))
-            println("S - Move South");
         if (navMan.canMove(player, Cardinal.EAST))
             println("E - Move East");
+        if (navMan.canMove(player, Cardinal.SOUTH))
+            println("S - Move South");
         if (navMan.canMove(player, Cardinal.WEST))
             println("W - Move West");
 

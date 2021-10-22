@@ -13,9 +13,13 @@ public class SceneManager {
         currentScene.run(player);
     }
 
-    public void setCurrentScene(Scene scene, Player player) throws IOException{
-        this.currentScene = scene;
-        currentScene.run(player);
+    public void setCurrentScene(Scene scene, Player player) {
+        try {
+            this.currentScene = scene;
+            currentScene.run(player);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
     }
 
 }
