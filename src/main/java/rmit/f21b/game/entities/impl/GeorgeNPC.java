@@ -44,7 +44,7 @@ public class GeorgeNPC extends NPC {
             enterToContinue();
             clearScreen();
 
-            displayDialogue("Seeing as you have come this far, I believe you have the power to defat this demon");
+            displayDialogue("Seeing as you have come this far, I believe you have the power to defeat this demon");
             enterToContinue();
             clearScreen();
 

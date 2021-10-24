@@ -5,29 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3a06b8ee-f6e1-4358-9a90-6d9292b0d029" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/EndingScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/EnemyKilledScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/FightScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/PlayerDeathScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/AngryDemonEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/BatEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/GeorgeNPC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/MonstrousCrabEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/PossessedSnakeEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/UglyBeastEnemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/util/Enemy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/util/NPC.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/Util.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/SceneManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/SceneManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IdleScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IdleScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IntroScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/IntroScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/core/impl/MovementScene.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/impl/HealthPotionItem.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/impl/HealthPotionItem.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/PotionBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/item/util/PotionBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/MapSection.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/navigation/NavigationManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/GeorgeNPC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/rmit/f21b/game/entities/impl/GeorgeNPC.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -132,6 +111,8 @@
       <workItem from="1633159539824" duration="1763000" />
       <workItem from="1634102943649" duration="1177000" />
       <workItem from="1634104583273" duration="771000" />
+      <workItem from="1634877921631" duration="2947000" />
+      <workItem from="1635047472089" duration="606000" />
     </task>
     <servers />
   </component>
